@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,6 +35,9 @@
                                 <rect key="frame" x="152" y="277" width="70" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fnc-ML-1wa"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Mfe-fy-sYY">
                                 <rect key="frame" x="51" y="73" width="275" height="163"/>
@@ -133,8 +135,6 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="qVY-dH-O2t" secondAttribute="trailing" constant="33" id="2To-hw-XHX"/>
-                            <constraint firstItem="qVY-dH-O2t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="33" id="4uf-1O-4mx"/>
                             <constraint firstItem="Mfe-fy-sYY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="Mky-jc-8MW"/>
                             <constraint firstAttribute="trailing" secondItem="Mfe-fy-sYY" secondAttribute="trailing" constant="50" id="T8I-XI-vd4"/>
                             <constraint firstItem="qVY-dH-O2t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="49" id="XO7-Jr-J8o"/>
@@ -143,6 +143,12 @@
                             <constraint firstAttribute="trailing" secondItem="qVY-dH-O2t" secondAttribute="trailing" constant="49" id="x0W-mz-NNJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="billAmountField" destination="qHe-wL-ARs" id="BnJ-Od-sYK"/>
+                        <outlet property="tipAmountField" destination="Kk5-sw-6E4" id="1L3-yp-HxV"/>
+                        <outlet property="tipSelector" destination="CCt-w5-3Ob" id="gTv-WS-dhM"/>
+                        <outlet property="totalAmountField" destination="MbJ-el-9eo" id="CmN-2P-4xm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
