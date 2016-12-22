@@ -58,6 +58,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+// will work on phone supposedly
+//    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+//        return .LightContent
+//    }
+
 
 }
 
